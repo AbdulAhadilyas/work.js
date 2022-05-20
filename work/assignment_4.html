@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>ALL Assignment</h1>
+    <h2><a href="./assignment_1.html">assignment_1</a></h2>
+    <h2><a href="./assignment_2.html">assignment_2</a></h2>
+    <h2><a href="./assignment_3.html">assignment_3</a></h2>
+    <h2><a href="./assignment_4.html">assignment_4</a></h2>
+    <h2><a href="./assignment_5.html">assignment_5</a></h2>
+    <h2><a href="./assignment_6.html">assignment_6</a></h2>
+      <h1>Cheak Your Grade</h1>
+      <h4>PLEASE ENTER YOUR PERCENTAGE</h4>
+    <input type="number" id="numberinput" />
+    <button onclick="submit ()">submit</button>
+    <script>
+      function submit () {
+        let userIpunt = document.querySelector("#numberinput").value;
+        console.log(userIpunt)
+
+        if (userIpunt>=80  ){
+            document.write('congratulations you got A+ Grade')
+        }
+        else if (userIpunt>=70){
+            document.write('congratulations you got A Grade')
+
+        }else if (userIpunt>=60 ){
+            document.write("Keep it up you got A- Grade")
+
+        }else if (userIpunt>=50 ){
+            document.write('Good you got  B Grade')
+
+        }else if (userIpunt>=40 ){
+            document.write('You need to work hard you got C Grade')
+
+        } else{
+            document.write("tum sa na hopay ga")
+        }
+       
+
+      }
+    </script>
+  </body>
+</html>
